@@ -1,9 +1,84 @@
+* {
+    border: 1px solid red;
+}
+
 body {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: rgba(81,139,184,0.3);
+    margin: 0px 0px; /* Without margin in the page*/
 }
 
 header {
-    background-image: url("../images/header_background");
-    background-color: #cccccc;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    background-image: url("../images/header_background.jpg");
+    background-size: cover;
 }
+
+#front {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 92.5vh;
+    color: rgba(31,41,55,255);
+    font-size: 1.5em;
+    -webkit-text-stroke: 2px white; /* width and color */
+}
+
+.header_list img{
+    max-width: 7.5vh;
+}
+
+#front img {
+    max-width: 40vw;
+}
+
+.header_list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+
+/*Header ul list*/
+ul{
+    display: flex;
+    flex-flow: row nowrap;
+    padding-inline-start: 0px;
+    padding-inline-end: 10vw;
+    gap:20vw;
+}
+
+li {
+    list-style: none;
+    font-size: larger;
+}
+
+.skills {
+    height: 50vh;
+    width: 100vh;
+    background-color: azure;
+}
+
+.skills_containers {
+    height: 50vh;
+    width: 100vh;
+    background-color: orange;
+}
+
+.works {
+
+}
+
+.contact {
+
+}
+
+a:link {color:#858594}    
+a:visited{color:#858594}
+a{text-decoration: none;}
+a:hover{text-decoration:underline;}
