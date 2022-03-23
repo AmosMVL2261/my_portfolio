@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-image: url("../images/header_background");
+    background-color: #cccccc;
+}
