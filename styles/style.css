@@ -162,16 +162,6 @@ a:visited{color:#858594;}
     text-align: center;
 }
 
-/*
-No funciona
-div.projects_boxes div.space {
-    border-color: aqua;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-}
-*/
-
 #contact {
     padding: 2vh 0vh;
     display: flex;
