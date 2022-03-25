@@ -1,7 +1,8 @@
+/*
 * {
     border: 1px solid red;
 }
-
+*/
 
 body {
     display: flex;
@@ -73,7 +74,7 @@ li {
 
 /* Padding is nessesary for the title of this section */
 #skills {
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     background-color: azure;
     display: flex;
     flex-flow: column nowrap;
@@ -94,7 +95,7 @@ li {
 
 /* The box that contains the languages boxes */
 .boxes {
-    border-color: blue;
+    /*border-color: blue;*/
     display: flex;
     flex-flow: row wrap;
     height: 40vh;
@@ -103,7 +104,7 @@ li {
 
 /* Languages boxes */
 .element {
-    border-color: green;
+    /*border-color: green;*/
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -138,6 +139,73 @@ ul li a {
 a:hover{text-decoration:underline;}
 a:link {color:#858594;}    
 a:visited{color:#858594;}
+
+#contact a, #works a {
+    text-decoration:none;
+}
+
+#contact a:hover, #works a:hover {
+    text-decoration:underline;
+}
+
+#contact a:visited, #works a:visited {
+    color:#858594;
+}
+
+#works {
+    padding: 2vh 0vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+ 
+#works h2, #contact h3 {
+    text-align: center;
+}
+
+/*
+No funciona
+div.projects_boxes div.space {
+    border-color: aqua;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+*/
+
+#contact {
+    padding: 2vh 0vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.projects_boxes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+#game {
+    align-self: center;
+}
+
+
+/* Footer styles */
+footer {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    height: fit-content;
+    font-size: 1.5em;
+    font-weight: 600;
+}
 
 /* The box's size (skills) is modify to fit all the content */
 @media only screen and (max-width: 1000px) {
